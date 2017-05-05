@@ -1,0 +1,56 @@
+{
+    "env": {
+        "node": true,
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "brace-style": ["error", "1tbs"],
+        "comma-spacing": "error",
+        "default-case": "error",
+        "eqeqeq": "error",
+        "func-call-spacing": ["error", "never"],
+        "guard-for-in": "error",
+        "indent": ["error", 4, {"SwitchCase": 1}],
+        "keyword-spacing": ["error", {
+            "before": true,
+            "after": true,
+            "overrides": {
+                "if": {"after": false},
+                "switch": {"after": false},
+                "for": {"after": false},
+                "while": {"after": false},
+                "catch": {"after": false}
+            }
+        }],
+        "linebreak-style": ["error", "unix"],
+        "new-parens": "error",
+        "no-caller": "error",
+        "no-console": ["error", {"allow": ["warn", "error"]}],
+        "no-div-regex": "error",
+        "no-empty": ["error", {"allowEmptyCatch": true}],
+        "no-extra-boolean-cast": "error",
+        "no-extra-bind": "error",
+        "no-loop-func": "error",
+        "no-new-func": "error",
+        "no-octal-escape": "error",
+        "no-trailing-spaces": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-unused-expressions": ["error", {
+            "allowShortCircuit": false,
+            "allowTernary": false,
+            "allowTaggedTemplates": true
+        }],
+        "no-useless-call": "error",
+        "operator-linebreak": ["error", "after"],
+        "quotes": ["error", "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
+        "semi": ["error", "always"],
+        "semi-spacing": ["error", {"before": false, "after": true}],
+        "space-before-blocks": ["error", "always"],
+        "space-before-function-paren": ["error", "never"],
+        "space-in-parens": ["error", "never"],
+        "space-infix-ops": ["error", {"int32Hint": false}],
+        "space-unary-ops": ["error", {"words": true, "nonwords": false}],
+        "strict": ["error", "function"]
+    }
+}
